@@ -13,16 +13,13 @@ jamf setComputerName -name XXXXX-XXXXXX-M
 # connect to a windows file share with credentials on a Mac
 smb://other_username:*@server.name.here
 
-# fileshare for DWT Windows
-smb://unimelb.edu.au/uom/MOE
-
 # find files in terminal list command
 ls -lah | grep -i “xxx”
 
-# run a trigger
+# run a jamf trigger
 sudo jamf policy -event <triggerName>
 
-# run a policy id 
+# run a jamf policy id 
 sudo Jamf policy -id <idNumber>
 
 # jamf binary location
