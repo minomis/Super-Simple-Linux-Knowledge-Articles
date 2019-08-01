@@ -1,0 +1,38 @@
+Useful Commands
+
+
+# find Mac serial number
+ioreg -l | grep -i serialnumber | grep -i platform
+
+# boot into recovery mode from terminal
+sudo nvram recovery-boot-mode=unused
+
+# change computer name (must be enrolled)
+jamf setComputerName -name XXXXX-XXXXXX-M
+
+# connect to a windows file share with credentials on a Mac
+smb://other_username:*@server.name.here
+
+# fileshare for DWT Windows
+smb://unimelb.edu.au/uom/MOE
+
+# find files in terminal list command
+ls -lah | grep -i “xxx”
+
+# run a trigger
+sudo jamf policy -event <triggerName>
+
+# run a policy id 
+sudo Jamf policy -id <idNumber>
+
+# jamf binary location
+/usr/local/jamf/bin/jamf
+
+# find files last changed
+find /Library/ -newerct '5 seconds ago' ; find ~/ -newerct '5 seconds ago' 
+
+# find text and replace
+sed -i 's/targetText/replacementText/' /location/example.txt
+
+#add a firewall exception at the application layer
+/usr/libexec/ApplicationFirewall/socketfilterfw --add /pathToApp/test.app
