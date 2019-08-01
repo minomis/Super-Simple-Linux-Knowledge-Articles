@@ -36,3 +36,5 @@ sed -i 's/targetText/replacementText/' /location/example.txt
 
 #add a firewall exception at the application layer
 /usr/libexec/ApplicationFirewall/socketfilterfw --add /pathToApp/test.app
+
+
