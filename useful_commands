@@ -34,7 +34,7 @@ find /Library/ -newerct '5 seconds ago' ; find ~/ -newerct '5 seconds ago'
 # find text and replace
 sed -i 's/targetText/replacementText/' /location/example.txt
 
-#add a firewall exception at the application layer
+# add a firewall exception at the application layer
 /usr/libexec/ApplicationFirewall/socketfilterfw --add /pathToApp/test.app
 
 
