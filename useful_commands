@@ -8,13 +8,13 @@ ioreg -l | grep -i serialnumber | grep -i platform
 sudo nvram recovery-boot-mode=unused
 
 # Change computer name (must be enrolled)
-jamf setComputerName -name XXXXX-XXXXXX-M
+jamf setComputerName -name <newComputerNameHere>
 
 # Connect to a windows file share with credentials on a Mac
-smb://other_username:*@server.name.here
+smb://<username>:*@<serverNameHere>
 
 # Find files in terminal list command
-ls -lah | grep -i “xxx”
+ls -lah | grep -i <inputSearch>
 
 # Run a jamf trigger
 sudo jamf policy -event <triggerName>
@@ -32,7 +32,7 @@ find /Library/ -newerct '5 seconds ago' ; find ~/ -newerct '5 seconds ago'
 sed -i .org 's/<targetText>/<replacementText>/' /<locationPath>/<file.txt>
 
 # Add a firewall exception at the application layer
-/usr/libexec/ApplicationFirewall/socketfilterfw --add /pathToApp/test.app
+/usr/libexec/ApplicationFirewall/socketfilterfw --add </pathToApp/test.app>
 
-# How to convert a binary plist to an XML
-
+# How to convert a mobileconfig signed profile to a readable XML file
+security cms -D -i </path/to/file.mobileconfig> | xmllint --pretty 1 - > <path/to/new/file.xml>
