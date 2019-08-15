@@ -1,37 +1,38 @@
 Useful Commands
 
 
-# find Mac serial number
+# Find Mac serial number
 ioreg -l | grep -i serialnumber | grep -i platform
 
-# boot into recovery mode from terminal
+# Boot into recovery mode from terminal
 sudo nvram recovery-boot-mode=unused
 
-# change computer name (must be enrolled)
+# Change computer name (must be enrolled)
 jamf setComputerName -name XXXXX-XXXXXX-M
 
-# connect to a windows file share with credentials on a Mac
+# Connect to a windows file share with credentials on a Mac
 smb://other_username:*@server.name.here
 
-# find files in terminal list command
+# Find files in terminal list command
 ls -lah | grep -i “xxx”
 
-# run a jamf trigger
+# Run a jamf trigger
 sudo jamf policy -event <triggerName>
 
-# run a jamf policy id 
+# Run a jamf policy id 
 sudo Jamf policy -id <idNumber>
 
-# jamf binary location
+# Jamf binary location
 /usr/local/jamf/bin/jamf
 
-# find files last changed
+# Find files last changed
 find /Library/ -newerct '5 seconds ago' ; find ~/ -newerct '5 seconds ago' 
 
-# find text and replace
+# Find text and replace
 sed -i .org 's/<targetText>/<replacementText>/' /<locationPath>/<file.txt>
 
-# add a firewall exception at the application layer
+# Add a firewall exception at the application layer
 /usr/libexec/ApplicationFirewall/socketfilterfw --add /pathToApp/test.app
 
+# How to convert a binary plist to an XML
 
