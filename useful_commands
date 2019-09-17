@@ -37,4 +37,7 @@ sed -i .org 's/<targetText>/<replacementText>/' /<locationPath>/<file.txt>
 # How to convert a mobileconfig signed profile to a readable XML file
 security cms -D -i </path/to/file.mobileconfig> | xmllint --pretty 1 - > <path/to/new/file.xml>
 
+# How to sign an application
+codesign --sign <"Insert Certificate Common Name"> <"location/of/.app"> 
+
 
