@@ -1,4 +1,4 @@
-Useful Commands
+Mac - Useful Commands
 
 
 # Find Mac serial number
@@ -7,23 +7,8 @@ ioreg -l | grep -i serialnumber | grep -i platform
 # Boot into recovery mode from terminal
 sudo nvram recovery-boot-mode=unused
 
-# Change computer name (must be enrolled)
-jamf setComputerName -name <newComputerNameHere>
-
 # Connect to a windows file share with credentials on a Mac
 smb://<username>:*@<serverNameHere>
-
-# Find files in terminal list command
-ls -lah | grep -i <inputSearch>
-
-# Run a jamf trigger
-sudo jamf policy -event <triggerName>
-
-# Run a jamf policy id 
-sudo Jamf policy -id <idNumber>
-
-# Jamf binary location
-/usr/local/jamf/bin/jamf
 
 # Find files last changed
 find /Library/ -newerct '5 seconds ago' ; find ~/ -newerct '5 seconds ago' 
@@ -39,5 +24,3 @@ security cms -D -i </path/to/file.mobileconfig> | xmllint --pretty 1 - > <path/t
 
 # How to sign an application
 codesign --sign <"Insert Certificate Common Name"> <"location/of/.app"> 
-
-
