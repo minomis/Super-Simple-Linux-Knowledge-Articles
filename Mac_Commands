@@ -1,5 +1,5 @@
-MAC - Commands that may be useful in the future
-
+Mac commands that may be useful in the future.
+---
 
 # Find Mac serial number
 ioreg -l | grep -i serialnumber | grep -i platform
