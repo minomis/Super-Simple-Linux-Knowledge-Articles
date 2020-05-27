@@ -1,6 +1,0 @@
-Linux commands that may be useful in the future.
----
-
-# Checks Nvidia Driver version installed
-nvidia-smi
-
