@@ -1,0 +1,11 @@
+Mac commands that may be useful in the future.
+---
+
+# Find Mac serial number
+ioreg -l | grep -i serialnumber | grep -i platform
+
+# Connect to a windows file share with credentials on a Mac
+smb://<username>:*@<serverNameHere>
+
+# Find text and replace
+sed -i .org 's/<targetText>/<replacementText>/' /<locationPath>/<file.txt>
