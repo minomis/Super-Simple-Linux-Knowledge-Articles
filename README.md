@@ -9,7 +9,7 @@
 
 ---
 
-### How to extract files from a rpm ###
+### How to extract files from a .rpm ###
 
 ```console
 rpm2cpio ./packagecloud-test-1.1-1.x86_64.rpm | cpio -idmv
