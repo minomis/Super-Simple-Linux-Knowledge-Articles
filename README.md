@@ -12,7 +12,7 @@
 ### Extract files from a rpm file ###
 
 ```console
-rpm2cpio <insert the location of the rpm you want to extract here> | cpio -idmv
+rpm2cpio <insert the rpm you want to extract here> | cpio -idmv -D <insert where you want the extracted rpm to go>
 ```
 
 ### Extract files from a deb file ###
