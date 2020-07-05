@@ -4,8 +4,8 @@
 ---
 
 ## Table of Contents ##
-1. [Extract files from a rpm file](#how-to-extract-files-from-a-rpm-file)
-1. [Extract files from a deb file](#how-to-extract-files-from-a-deb-file)
+1. [Extract files from a rpm file](#extract-files-from-a-rpm-file)
+1. [Extract files from a deb file](#extract-files-from-a-deb-file)
 
 ---
 
