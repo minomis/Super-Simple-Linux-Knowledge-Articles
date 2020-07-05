@@ -6,8 +6,10 @@
 ## Table of Contents ##
 
 **Packaging**
-1. [Extract files from a DEB file](#extract-files-from-a-deb-file)
-1. [Extract files from a RPM file](#extract-files-from-a-rpm-file)
+1. [Extract the contents from a DEB file](#extract-the-contents-from-a-deb-file)
+1. [Extract the files from a RPM file](#extract-the-files-from-a-rpm-file)
+1. [Extract the scripts from a RPM file](#extract-the-scripts-from-a-rpm-file)
+
 
 ---
 
