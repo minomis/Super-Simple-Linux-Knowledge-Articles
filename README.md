@@ -9,33 +9,34 @@
 1. [Extract the contents from a DEB file](#extract-the-contents-from-a-deb-file)
 1. [Extract the files from a RPM file](#extract-the-files-from-a-rpm-file)
 1. [Extract the scripts from a RPM file](#extract-the-scripts-from-a-rpm-file)
+1. [Build a DEB package from a DEBIAN package structure](#build-a-deb-package-from-a-debian-package-structure)
 
 ---
 
 ### Build a DEB package from a DEBIAN package structure ###
 
 ```console
-dpkg-deb -b <insert the DEBIAN package structure directory here> <insert the desired output location and name of the DEB package here, example: '/home/test/package.deb'>
+dpkg-deb -b <insert the build directory source> <insert the desired output location, example: '/home/test/package.deb'>
 ```
 
 ### Extract the contents from a DEB file ###
 
 ```console
-dpkg-deb -R <insert the DEB file you want to extract here> <insert where you want the extracted DEB file to go>
+dpkg-deb -R <insert the DEB file you want to extract> <insert where you want the extracted DEB file to go>
 ```
 *# this includes the DEBIAN folder structure*
 
 ### Extract the files from a RPM file ###
 
 ```console
-rpm2cpio <insert the RPM file you want to extract here> | cpio -idmv -D <insert where you want the extracted RPM file to go>
+rpm2cpio <insert the RPM file you want to extract> | cpio -idmv -D <insert where you want the extracted RPM file to go>
 ```
 *# this will only extract the files within an RPM, it does not extract the SPEC file*
 
 ### Extract the scripts from a RPM file ###
 
 ```console
-rpm -qp --scripts <insert the RPM file here> > <insert the output location of the script here>
+rpm -qp --scripts <insert the RPM file> > <insert the output location of the script>
 ```
 *# this will only extract the pre-install and post-install scripts*
 
