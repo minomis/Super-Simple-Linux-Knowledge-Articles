@@ -16,7 +16,7 @@
 ```console
 dpkg-deb -R <insert the DEB file you want to extract here> <insert where you want the extracted DEB file to go>
 ```
-*# this includes the DEBIAN folder structure to re-crete the package*
+*# this includes the DEBIAN folder structure*
 
 ### Extract the files from a RPM file ###
 
@@ -28,7 +28,8 @@ rpm2cpio <insert the RPM file you want to extract here> | cpio -idmv -D <insert 
 ### Extract the scripts from a RPM file ###
 
 ```console
-rpm2cpio <insert the RPM file you want to extract here> | cpio -idmv -D <insert where you want the extracted RPM file to go>
+rpm -qp --scripts <insert the RPM file here> > <insert the output location of the script here>
 ```
+*# this will only extract the pre-install and post-install scripts*
 
 ---
