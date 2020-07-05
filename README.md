@@ -10,8 +10,13 @@
 1. [Extract the files from a RPM file](#extract-the-files-from-a-rpm-file)
 1. [Extract the scripts from a RPM file](#extract-the-scripts-from-a-rpm-file)
 
-
 ---
+
+### Build a DEB package from a DEBIAN package structure ###
+
+```console
+dpkg-deb -b <insert the DEBIAN package structure directory here> <insert the location of where you want the deb file>
+*# don't forget to add the .deb extension*
 
 ### Extract the contents from a DEB file ###
 
