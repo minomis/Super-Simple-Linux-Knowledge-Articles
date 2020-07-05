@@ -1,3 +1,5 @@
+---
+
 # Super Simple Linux Knowledge Articles #
 *"that are really easy to understand"*
 
@@ -5,6 +7,8 @@
 
 ## Table of Contents ##
 [How to extract files from an RPM](#how-to-extract-files-from-an-rpm)
+
+---
 
 ### How to extract files from an RPM ###
 
