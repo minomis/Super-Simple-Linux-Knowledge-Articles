@@ -4,19 +4,21 @@
 ---
 
 ## Table of Contents ##
-1. [How to extract files from a rpm file](#how-to-extract-files-from-a-rpm-file)
-1. [How to extract files from a deb file](#how-to-extract-files-from-a-deb-file)
+1. [Extract files from a rpm file](#how-to-extract-files-from-a-rpm-file)
+1. [Extract files from a deb file](#how-to-extract-files-from-a-deb-file)
 
 ---
 
-### How to extract files from a rpm file ###
+### Extract files from a rpm file ###
 
 ```console
-rpm2cpio ./packagecloud-test-1.1-1.x86_64.rpm | cpio -idmv
+rpm2cpio <insert the location of the rpm you want to extract here> | cpio -idmv
 ```
 
-### How to extract files from a deb file ###
+### Extract files from a deb file ###
 
 ```console
 dpkg-deb -R
 ```
+
+---
