@@ -8,7 +8,6 @@
 **Packaging**
 1. [Extract files from a DEB file](#extract-files-from-a-deb-file)
 1. [Extract files from a RPM file](#extract-files-from-a-rpm-file)
-1. 
 
 ---
 
@@ -17,7 +16,6 @@
 ```console
 dpkg-deb -R <insert the DEB file you want to extract here> <insert where you want the extracted DEB file to go>
 ```
-
 *# this includes the DEBIAN folder structure to re-crete the package*
 
 ### Extract the files from a RPM file ###
@@ -25,6 +23,7 @@ dpkg-deb -R <insert the DEB file you want to extract here> <insert where you wan
 ```console
 rpm2cpio <insert the RPM file you want to extract here> | cpio -idmv -D <insert where you want the extracted RPM file to go>
 ```
+*# this will only extract the files within an RPM, it does not extract the SPEC file*
 
 ### Extract the scripts from a RPM file ###
 
