@@ -16,6 +16,7 @@
 
 ```console
 dpkg-deb -b <insert the DEBIAN package structure directory here> <insert the location of where you want the deb file>
+```
 *# don't forget to add the .deb extension*
 
 ### Extract the contents from a DEB file ###
